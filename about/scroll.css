@@ -33,12 +33,12 @@ header a{
   font-weight:700;
 }
 #hero1{
- background: url(2.JPG);
+ background: url(2.jpg);
   background-size:cover;
   background-position:center center;
   background-attachment:fixed;
 }
-#hero2{background: url(1.JPG);
+#hero2{background: url(1.jpg);
   background-size:cover;
   background-position:center center;
   background-attachment:fixed;
