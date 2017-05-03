@@ -1,154 +1,118 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Title of the document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="bootstrap/js/bootstrap.min.js"></script>    
-    <script src='./if.js' type='text/javascript'></script>
-    <link rel="stylesheet" href="./if.css" type="text/css">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title of the document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="bootstrap/js/bootstrap.min.js"></script>    
+        <script src='./js/custom.js' type='text/javascript'></script>
+        <link rel="stylesheet" href="./css/custom.css" type="text/css">
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="nivoslider/themes/default/default.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="nivoslider/themes/light/light.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="nivoslider/themes/dark/dark.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="nivoslider/themes/bar/bar.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="nivoslider/nivo-slider.css" type="text/css" media="screen" />  
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+        <script type="text/javascript" src="nivoslider/jquery.nivo.slider.js"></script> 
+        <script type="text/javascript">
+            $(window).load(function () {
+                $('#slider').nivoSlider();
+            });
+        </script> 
+    </head>
+    <body data-spy="scroll" data-target="#myScrollspy">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
 
-  </head>
-  <body data-spy="scroll" data-target="#myScrollspy">
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Brand</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          
-         
-          
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Logo</a>
+                </div>                
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                          
+                    <form class="navbar-form navbar-left" role="search">
+                        <!-- <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button> -->
+                    </form>          
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">About</a></li>            
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">Course</a></li>          
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Service<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Choreographer</a></li>
+                                <li><a href="#">Event</a></li>              
+                            </ul></li>
+                        <li><a href="#">Tutorial</a></li>            
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="./about/about.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-          
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Tìm Lớp</a></li>
-            <li><a href="#">Lịch Học</a></li>
-            <li><a href="#">Khóa Học</a></li>          
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dịch Vụ <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Biên Đạo</a></li>
-                <li><a href="#">Nhảy Sự Kiện</a></li>              
-              </ul></li>
-            <li><a href="#">Dạy Nhảy</a></li>
-            <li><a href="#">Đăng Ký</a></li>
-            <li><a href="#">Tin Tức</a></li>
-            <li><a href="./about/about.html">Liên Hệ</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-        
-      </div><!-- /.container-fluid -->
-    </nav>
-    <!-- Main Content To Show Dynamic Affix -->
-    <div class="container" name="toTop" id="topPos">
-      <iframe width="1140" height="600" src="https://www.youtube.com/embed/gTTSkM5GncA" frameborder="0" allowfullscreen></iframe>
-      <ul>
-        <li>  
-          <iframe width="243" height="136" src="https://www.youtube.com/embed/gTTSkM5GncA" frameborder="0" allowfullscreen></iframe>
-        </li>
-        <li>  
-          <iframe width="243" height="136" src="https://www.youtube.com/embed/gTTSkM5GncA" frameborder="0" allowfullscreen></iframe>
-        </li>
-        <li>  
-          <iframe width="243" height="136" src="https://www.youtube.com/embed/gTTSkM5GncA" frameborder="0" allowfullscreen></iframe>
-        </li>
-        <li>  
-          <iframe width="243" height="136" src="https://www.youtube.com/embed/gTTSkM5GncA" frameborder="0" allowfullscreen></iframe>
-        </li>
-     </ul>
- 
+        </nav>    
+        <div class="container" name="toTop" id="topPos">          
+            <div id="wrapper">
+                <div class="slider-wrapper theme-default">
+                    <div id="slider" class="nivoSlider"> 
+                        <img src="nivoslider/images/1.jpg" data-thumb="nivoslider/images/1.jpg" alt="" /> 
+                        <img src="nivoslider/images/2.jpg" data-thumb="nivoslider/images/2.jpg" alt="" />
+                        <img src="nivoslider/images/3.jpg" data-thumb="nivoslider/images/3.jpg" alt="" data-transition="slideInLeft" /> 
+                        <img src="nivoslider/images/4.jpg" data-thumb="nivoslider/images/4.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
 
-    </div>
-
-    <div id="fake-footer">
-      <footer>
-        <div class="footerpart">          
-          <ul class="siteinfo">          
-            <li>            
-              <h4>LastFire Studio</h4>              
-              <p class="graphic">graphics, web & logo design, web development, Wordpress implementation and SEO optimization in Jacksonville, FL</p>          
-              <span class="call-me">Call me: (918) 905-9012 </span>
-              <span class="email-me">Email:<a href="mailto:contactme@wjwjr.com">contactme@wjwjr.com</a></span>
-              <br/>
-              <span class="follow-me">Follow us:</span>              
-              <ul>              
-                <li class="facebook">facebook</li>
-                <li class="google">google</li>
-                <li class="twitter">twitter</li>                             
-              </ul>
-              
-              <span class="copyright"> &copy;2013, <a href="http://wjwjr.com">WJW<span style="color:red">JR</span></a>, Jacksonville, FL.  All Rights Reserved.</span
-            </li>
-          
-          </ul> <!-- END SITEINFO -->
-          
-          <ul class="company">
-          
-            <h4>Company</h4>
-            
-            <ul id="menu-company"></ul>
-            
-              <li><a href="#">Home</a></li>
-              
-              <li><a href="#">Web Design</a></li>
-              
-              <li><a href="#">Content Strategy</a></li>
-              
-              <li><a href="#">Social Media</a></li> 
-                
-              <li><a href="#">Resume</a></li>
-                
-              <li><a href="#">Notary Signing Agent</a></li>
-            
-              <li><a href="#">About Me</a></li>
-              
-              <li><a href="#">Contact me</a></li>
-              
-              <li><a href="#">Get a quote</a></li>
-              
-              <li><a href="#">White papers</a></li>
-              
-              <li><a href="#">Site map</a></li>
-            
-          
-            </ul>
-
-          
-          </ul><!-- END COMPANY -->
-          
-          <ul class="community">
-          
-          <h4>Community</h4>
-            
-            <ul id="menu-community">
-            
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Podcast</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">Support Me</a></li>
-            </ul> <!-- END menu-community -->
-
-          </ul> <!-- END COMMUNITY -->      
-        </div> <!-- END FOOTERPART -->
-      </footer>
-    </div>
-  </body>
+        </div>
+        <div id="fake-footer">
+            <footer>
+                <div class="footerpart">          
+                    <ul class="siteinfo">          
+                        <li>            
+                            <h4>LastFire Studio</h4>              
+                            <p class="graphic">graphics, web & logo design, web development, Wordpress implementation and SEO optimization in Jacksonville, FL</p>          
+                            <span class="call-me">Call me: (918) 905-9012 </span>
+                            <span class="email-me">Email:<a href="mailto:contactme@wjwjr.com">contactme@wjwjr.com</a></span>
+                            <br/>
+                            <span class="follow-me">Follow us:</span>              
+                            <ul>              
+                                <li class="facebook">facebook</li>
+                                <li class="google">google</li>
+                                <li class="twitter">twitter</li>                             
+                            </ul>
+                            <span class="copyright"> &copy;2013, <a href="http://wjwjr.com">WJW<span style="color:red">JR</span></a>, Jacksonville, FL.  All Rights Reserved.</span
+                        </li>
+                    </ul> <!-- END SITEINFO -->
+                    <ul class="company">
+                        <h4>Company</h4>
+                        <ul id="menu-company"></ul>            
+                        <li><a href="#">Home</a></li>              
+                        <li><a href="#">Web Design</a></li>              
+                        <li><a href="#">Content Strategy</a></li>              
+                        <li><a href="#">Social Media</a></li>                 
+                        <li><a href="#">Resume</a></li>                                                  
+                    </ul>          
+                    </ul><!-- END COMPANY -->
+                    <ul class="community">
+                        <h4>Community</h4>
+                        <ul id="menu-community">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Podcast</a></li>
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Support Me</a></li>
+                        </ul> <!-- END menu-community -->
+                    </ul> <!-- END COMMUNITY -->      
+                </div> <!-- END FOOTERPART -->
+            </footer>
+        </div>
+    </body>
 </html>
