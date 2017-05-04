@@ -33,12 +33,12 @@ header a{
   font-weight:700;
 }
 #hero1{
- background: url(2.jpg);
+ background: url(../content/about/2.jpg);
   background-size:cover;
   background-position:center center;
   background-attachment:fixed;
 }
-#hero2{background: url(1.jpg);
+#hero2{background: url(../content/about/1.jpg);
   background-size:cover;
   background-position:center center;
   background-attachment:fixed;
@@ -88,23 +88,4 @@ p{
   padding:0px 20px;
   width: 500px;
   margin: auto;
-}
-.founder div{  
-  height: 300px;
-  width: 360px;
-  border-radius: 5px;
-}
-.founder{
-  display: flex;
-  margin: auto;
-  margin: auto;
-}
-.founder div .founder-name {
-  position: relative;
-  top: 60px;
-  background-color: #262626;
-  height: 40px;
-}
-.founder{
-  margin-top: 10px;
 }
